@@ -31,15 +31,25 @@
         let container=document.getElementById("container");
         let container1=document.getElementById("container1");
         append(res,container,container1);
+        let carting=document.getElementById("cart");
+        carting.addEventListener("click",cart);
+    function cart()
+    {
+        if(localStorage.getItem("cart")===null){
+            localStorage.setItem("cart",JSON.stringify([]));
+        }
+        let products_cart=JSON.parse(localStorage.getItem("cart"));
+        products_cart.push(res);
+        localStorage.setItem("cart",JSON.stringify(products_cart));
+        console.log("products_cart",products_cart);
+
+        window.location.href="cart.html";
+    }
     })
     .catch((err)=>{
         console.log("err:",err);
     });
 
-    let carting=document.getElementById("cart");
-    carting.addEventListener("click",cart);
-    function cart()
-    {
-        window.location.href="cart.html";
-    }
+    
+   
 </script>
