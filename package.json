@@ -1,0 +1,25 @@
+{
+  "name": "08novcoding",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:tailwind": "tailwindcss build style/style.css -o projectmyown/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepesh06-95/08novcoding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepesh06-95/08novcoding/issues"
+  },
+  "homepage": "https://github.com/deepesh06-95/08novcoding#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {},
+  "description": ""
+}
