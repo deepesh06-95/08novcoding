@@ -35,6 +35,7 @@
         carting.addEventListener("click",cart);
     function cart()
     {
+        alert("added to the cart");
         if(localStorage.getItem("cart")===null){
             localStorage.setItem("cart",JSON.stringify([]));
         }
@@ -42,6 +43,7 @@
         products_cart.push(res);
         localStorage.setItem("cart",JSON.stringify(products_cart));
         console.log("products_cart",products_cart);
+        
 
         window.location.href="cart.html";
     }
