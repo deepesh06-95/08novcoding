@@ -20,3 +20,50 @@ a{
     text-decoration: none;
     color: grey;
 }
+img{
+    width:100%;
+}
+#container{
+    display: grid;
+    grid-template-columns: 55% 40%;
+    grid-gap:10px;
+    justify-content: center;
+    padding:1%;
+}
+#container>div:hover{
+    border: 2px solid white;
+    padding:0.5%;
+    background-color: gray;
+    color: white;
+}
+#container>img:hover{
+border: 2px;
+padding: 0.5%;
+background-color: white;
+}
+#container1{
+    margin:3%;
+    background-color: gray;
+    color: white;
+}
+h1{
+    text-align: center;
+}
+input{
+    height:50%;
+    margin-top: 5%;
+    width:70%;
+    border: none;
+    outline: none;
+}
+button{
+    height:60%;
+    margin-top:5%;
+    background-color: gray;
+    color: white;
+    border: none;
+    outline: none;
+}
+body{
+    background-color: rgb(245, 222, 222);
+}

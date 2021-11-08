@@ -3,7 +3,7 @@ function navbar()
 {
     return `
     
-    <h3><a href="/">Home</a></h3>
+    <h3><a href="index.html">Home</a></h3>
 
     <div id="ser">
     <input id="Search" type="text" placeholder="Search"/>
