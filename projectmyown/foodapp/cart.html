@@ -9,11 +9,16 @@
 </head>
 <body>
     <button id="OrderING">Place Your Order</button>
+    <div id="container"></div>
+    <div id="container1"></div>
+    
 </body>
 </html>
 <script type="module">
     import { getData , append } from "./components/showData.js";
     
+       
+       
      let carting=document.getElementById("OrderING");
     carting.addEventListener("click",cart);
     function cart()
@@ -24,7 +29,8 @@
             localStorage.setItem("cart",JSON.stringify([]));
         }
         let products_cart=JSON.parse(localStorage.getItem("cart"));
-        products_cart.push(res);
-        localStorage.setItem("cart",JSON.stringify(products_cart));
-        console.log("products_cart",products_cart);
+        let container=document.getElementById("container");
+        let container1=document.getElementById("container1");
+        append(products_cart[products_cart.length-1],container,container1);
+
     </script>
